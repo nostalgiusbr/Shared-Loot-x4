@@ -1,0 +1,90 @@
+import time
+
+
+
+# 0. Preciso somar o valor total do balance
+# 1. Se for positivo, mostrar lucro pra cada
+# 2. Se for negativo, mostrar prejuizo pra cada
+# 3. Apresentar waste de cada indivíduo + waste / igualar waste
+# 4. Apresentar valor final a ser repassado para cada
+
+
+##PROGRAMA DE DIVISÃO DE LOOT TIBIA
+print ('#'*50)
+print ('App Divisão de Loot x4 Tibia')
+time.sleep(1)
+
+###VARIÁVEIS####
+team = int (input ("Qual o tamanho do seu time?"))
+#ek = float (input('Qual o balance do Ek?'))
+#nameEk = input ('Qual nome do EK?')
+#ed = float (input('Qual o balance do Ed?'))
+#nameEd = input ('Qual nome do Ed')
+#ms = float (input('Qual o balance do Ms?'))
+#nameMs = input ('Qual nome do Ms')
+#rp = float (input('Qual o balance do Rp?'))
+#nameRp = input ('qual nome do Rp')
+
+###LISTA####
+
+knight = ['nome', 'balance']
+druid = ['nome', 'balance']
+paladin = ['nome', 'balance']
+sorcerer = ['nome', 'balance']
+
+#####CONDIÇÃO#####
+if team == 2:
+    knight[0] = str (input('Qual o nome do Ek?:'))
+    knight[1] = float (input('Qual o balance do Ek?:'))
+    druid[0] = str (input('Qual o nome do Ed?:'))
+    druid[1] = float (input('Qual o balance do druid?:'))
+elif team ==3:
+    knight[0] = str (input('Qual o nome do Ek?:'))
+    knight[1] = float (input('Qual o balance do Ek?:'))
+    druid[0] = str (input('Qual o nome do Ed?:'))
+    druid[1] = float (input('Qual o balance do druid?:'))
+    paladin[0] = str (input('Qual o nome do Ms ou Rp?:'))
+    paladin[1] = float (input('Qual o balance do Ms ou Rp?:'))
+elif team ==4:
+    knight[0] = str (input('Qual o nome do Ek?:'))
+    knight[1] = float (input('Qual o balance do Ek?:'))
+    druid[0] = str (input('Qual o nome do Ed?:'))
+    druid[1] = float (input('Qual o balance do druid?:'))
+    paladin[0] = str (input('Qual o nome do Ms ou Rp?:'))
+    paladin[1] = float (input('Qual o balance do Ms ou Rp?:'))
+    sorcerer[0] = str (input('Qual o nome do Ms ou Rp?:'))
+    sorcerer[1] = float (input('Qual o balance do Ms ou Rp?:'))
+    
+    
+
+
+###CALCULO PARA SOMA DO BALANCE POSITIVO###
+#totalx4 = ek + ed + ms + rp
+#totalx3 = ek + ed + ms or rp
+#totalx2 = ek + ed
+##################################
+
+lucro = float (team)
+waste = float (lucro < 0)
+
+#x2 = ek, ed
+#x3 = ek, ed, rp or ms
+#x4 = ek, ed, rp, ms
+
+
+
+#print ('O Waste total foi de {:.3f}'.format(total)) #Mostra total
+
+#print ("O total foi de %.3f" %(total)) #Da certo
+#print (f"O total foi de {:,.3ftotal}") #Da certo
+
+if lucro > 0:
+    print ('O Lucro para foi de {:.3f}'.format(lucro)) 
+elif lucro == 0:
+    print ('Não houve lucro nem prejuizo')
+elif lucro < 0:
+    print ('O Prejuizo foi de {:.3f}'.format(waste))
+
+
+
+ 

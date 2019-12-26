@@ -1,0 +1,18 @@
+class Team:
+    def __init__(self, nome, balance):
+        self.nome = nome
+        self.balance = balance
+
+    def setNome (self,nome):
+        self.nome = nome
+
+    def setBalance (self.balance):
+        self.balance = balance
+
+    def getNome (self):
+        return self.nome
+
+    def getBalance (self):
+        
+        return self.balance
+
